@@ -1,0 +1,329 @@
+/*Globals (tüm sayfalar için geçerli kurallar)*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+body{
+    background-color: #F9F7F7;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+i{
+    font-size: 2.5rem;
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+
+/*Header, Navbar ve Footer (Tüm sayfalarda ortak)*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DBE2EF;
+    padding: 20px 0;
+}
+
+header h1{
+    margin-bottom: 12px;
+}
+
+header img{
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    background-color: #112D4E;
+    margin-bottom: 40px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+nav ul a {
+    color: white;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-style: italic;
+    background-color: #112D4E;
+}
+
+/***Ana Sayfa***/
+/*Tanıtım Kısmı*/
+.introduction{
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.introduction img{
+    width: 35%;
+}
+
+.introduction div{
+    width: 40%;
+}
+
+.introduction span{
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.introduction p{
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+}
+
+/*Yazılar Kısmı*/
+.articles{
+    background-color: #3F72AF;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 40px 0;
+
+}
+
+.articles h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.articles ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.articles ul li{
+    width: 25%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.articles li img{
+    width: 90%;
+    border-radius: 8px;
+}
+
+.articles li span{
+    font-style: italic;
+}
+
+.articles li p{
+    width: 90%;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+/***Hakkımda Sayfası***/
+.hakkimda-body section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.hakkimda-body h2{
+    margin-bottom: 20px;
+}
+
+/*Ben kimim kısmı*/
+.about-me img{
+    width: 40%;
+    margin: 20px 0;
+}
+
+.about-me p{
+    width: 45%;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
+
+/*Hobilerim kısmı*/
+.hobbies ul{
+    width: 50%;
+}
+
+.hobbies ul li{
+    border: 1px solid black;
+    margin-bottom: 12px;
+    padding: 16px 12px;
+    border-radius: 8px;
+}
+
+/*Bağlantılar kısmı*/
+.external-links ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.external-links ul a{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/***İletişim Sayfası***/
+.contact-information{
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+}
+
+.contact-information h2{
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.message-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.message-form input{
+    font-size: 0.9rem;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    background-color: #F9F7F7;
+    padding: 2px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.message-form input:focus{
+    outline: none;
+}
+
+.message-form textarea{
+    resize: none;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    background-color: #F9F7F7;
+    padding: 2px;
+    font-size: 0.9rem;
+}
+
+.message-form textarea:focus{
+    outline: none;
+}
+
+.message-form #sbt-btn{
+    border: 1px solid black;
+    background-color: #3F72AF;
+    color: white;
+    padding: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.social-media{
+    width: 50%;
+}
+
+.social-media p{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.social-media ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media ul a{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/***Mobil için responsive tasarım***/
+@media only screen and (max-width: 500px){
+    /*Header, Navbar ve Footer (Tüm sayfalarda ortak)*/
+    header img{
+        width: 35%;
+    }
+
+    nav ul{
+        width: 80%;
+    }
+    /***Ana Sayfa***/
+    /*Tanıtım Kısmı*/
+    .introduction{
+        flex-direction: column;
+    }
+    .introduction img{
+        width: 90%;
+    }
+    
+    .introduction div{
+        width: 90%;
+    }
+    /*Yazılar Kısmı*/
+    .articles ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .articles ul li{
+        width: 90%;
+    }
+    /***Hakkımda Sayfası***/
+    /*Ben kimim kısmı*/
+    .about-me img{
+        width: 80%;
+    }
+    .about-me p{
+        width: 80%;
+    }
+    /*Bağlantılar kısmı*/
+    .external-links ul{
+        width: 80%;
+    }
+    /***İletişim Sayfası***/
+    .contact-information{
+        flex-direction: column;
+        align-items: center;
+    }
+    .message-form{
+        width: 90%;
+    }
+    .social-media{
+        width: 90%;
+    }
+}
